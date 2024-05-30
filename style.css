@@ -1232,7 +1232,7 @@ a:hover {
 }
 
 .card-blog {
-  height: 70vh; /* Set all containers to full viewport height */
+  height: 75vh; /* Set all containers to full viewport height */
 }
 
 .card-blog .card-category-box {
