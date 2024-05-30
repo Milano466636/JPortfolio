@@ -1232,7 +1232,7 @@ a:hover {
 }
 
 .card-blog {
-  height: 75vh; /* Set all containers to full viewport height */
+  height: 70vh; /* Set all containers to full viewport height */
 }
 
 .card-blog .card-category-box {
@@ -1463,3 +1463,4 @@ footer .credits a {
   font-size: 17px; /* Adjust the size as needed */
   line-height: 1.8; /* Adjust the line height for better readability */
 }
+
