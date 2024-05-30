@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jordan Bantleman</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Portrate-Small.jpg" rel="icon">
+  <link href="Portrate-Small.jpg" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    .about-description {
+      display: none;
+      overflow: hidden;
+      max-height: 100px;
+      transition: max-height 0.5s ease;
+    }
+
+    .about-description.expanded {
+      display: block;
+      max-height: 1000px;
+    }
+
+    .read-more {
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: underline;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .service-box {
+      height: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .s-description {
+      flex-grow: 1;
+    }
+
+    @media (max-width: 767px) {
+      .card-blog {
+        margin-bottom: 20px;
+      }
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Jordan Bantleman</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Experience & Education</a></li>
+          <li class="dropdown"><a href="AllBlog.html"><span>Blogs</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="AllBlog.html">View All Blogs</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Film Projects</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Morning Montage.html">Morning Montage (Year 11)</a></li>
+              <li class="dropdown"><a href="#"><span>BMPCC4K Projects</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="Learning BMPCC4k.html">Education Through the Black Magic</a></li>
+                  <li><a href="BMPCC4k Film.html">Short Film Through the Black Magic</a></li>
+                </ul>
+              </li>
+              <li><a href="BBC News.html">BBC News Report</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="#"><span>Visual Art & Arts Lab</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="With in the wind.html">Within the wind</a></li>
+              <li class="dropdown"><a href="#"><span>2024 Arts Lab</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="Development Of Film.html">Development Of Film</a></li>
+                </ul>
+              <li><a href="Monotype Painting.html">Monotype Painting</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image">
+    <img src="Hero.jpg" alt="Hero Background" class="hero-bg">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Jordan Bantleman</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Film Maker, Designer, Student"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="JordanPortrateSchool.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Jordan Bantleman</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Film Maker/Student</span></p>
+                        <p><span class="title-s">Personal Email: </span> <span>Bantleman.jordan@gmail.com</span></p>
+                        <p><span class="title-s">Organisation/School Email: </span> <span>Bantlemanj@wesley.wa.edu.au</span></p>
+                        <p><span class="title-s">Phone: </span> <span>+61 422 850 288</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <div class="about-description-container">
+                      <p class="lead about-description">
+                        I fell in love with film at a very young age. When I was a child, I used to make short videos of anything and everything—from cooking to daily activities, exploring the world of vlogs. My main inspiration came from YouTube videos; I was fascinated by the idea that anyone could create content and share it with the world. However, as I grew older, I realized that my film journey would be shaped more within cinema rather than YouTube.
+                      </p>
+                      <p class="lead about-description">
+                        Creativity has always been the cornerstone of my media journey. I love creating media because it allows me to express myself visually, a medium that I find incredibly fulfilling. Some of my proudest projects include a BBC News broadcast I did in Year 10 with my friends. We had so much fun, and I was primarily responsible for filming, setting up cameras, and expanding my editing skills. Another project I’m particularly proud of is my morning montage for Year 11 ATAR Media. It was my first production in Year 11, and I learned a lot about coordinating cameras and being prepared on location.
+                      </p>
+                      <p class="lead about-description">
+                        One of the biggest challenges I've faced is doubt. The film industry is a complex and often confusing pathway with no straightforward route to becoming a director of photography. For a long time, I considered becoming an architect, but I realized that my true passion was in media. I decided that if I were to pursue media, I would give it everything I've got, even if I failed.
+                      </p>
+                      <p class="lead about-description">
+                        I have acquired many skills from my media and Arts Lab projects. My ATAR Media classes have provided me with the theoretical knowledge and practical experience needed to create high-quality films. Arts Lab has given me the opportunity to explore my love for film in more detail, free from the constraints of tests and assessments.
+                      </p>
+                      <p class="lead about-description">
+                        My film projects have helped me grow personally by making me appreciate the media I consume daily. Most people watch media without understanding what goes into it, but my deeper understanding has given me a greater appreciation for it. Professionally, my projects have helped me narrow down my career path and scope my abilities.
+                      </p>
+                      <p class="lead about-description">
+                        I hope my work will impact others by not only entertaining them but also educating them. For instance, I've made videos for my dad's work, showcasing properties that quickly garnered views and helped sell the properties faster. My long-term goal is to study at an American university, specifically USC, to pursue a career in Hollywood feature films as a director of photography. With a Hollywood budget and equipment, the media I could create would be unimaginable.
+                      </p>
+                      <p class="lead about-description">
+                        My personal qualities are integral to my work and daily life. Curiosity drives me to constantly extend myself and explore new aspects of my studies. Resilience keeps me focused, and dedication helps me persevere through any task. Confidence, enthusiasm, and determination have always been my allies in achieving success. For example, I volunteered to be the MC for an art exhibition at my school, which taught me valuable public speaking skills and how to connect with an audience.
+                      </p>
+                      <p class="lead about-description">
+                        My creative process starts with ideas that resonate deeply with me, reflecting my values and interests. I develop these ideas by exploring various fields. For instance, I recently took a CPR course, learned to be a barista, acted in Year 9, and played the violin. These diverse experiences help me generate unique ideas and stories. I strive to take unique approaches to my media, often drawing inspiration from my family and personal experiences, creating a distinctive atmosphere that engages the audience.
+                      </p>
+                    </div>
+                    <span id="read-more-btn" class="read-more">Read More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Experience & Education Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Experience & Education
+              </h3>
+              <p class="subtitle-a">
+                I Actively stride to maintain a high level of experiences and education to equipped myself with the best resources.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Community Service</h2>
+                <p class="s-description text-center">
+                  I have dedicated around 60 hours to community service, primarily through film productions for both internal and external projects. This experience has allowed me to apply my filmmaking skills to benefit the community while developing valuable professional and personal skills. Details of these activities can be found in the portfolio section.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Personal Films</h2>
+                <p class="s-description text-center">
+                  Throughout my life, I have consistently worked on personal film projects. These projects reflect my passion for storytelling and creativity. From short films to montages, I have continuously explored and honed my filmmaking skills. More details about these projects are available in the portfolio section.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">ATAR Courses</h2>
+                <p class="s-description text-center">
+                  I am currently enrolled in the following ATAR courses: Engineering, Media Analysis, Business and Enterprise, English ATAR, and Mathematics Applications. These subjects provide a strong foundation for both my creative and analytical skills, equipping me with a diverse set of knowledge and abilities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Practical Projects Coding/Engineering</h2>
+                <p class="s-description text-center">
+                  I am actively involved in numerous practical projects. I own a 3D printer, which I use to create engineering projects, showcasing my skills in design and fabrication. Additionally, I have coding experience and have developed a website, further enhancing my technical abilities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Training Education</h2>
+                <p class="s-description text-center">
+                  I have completed several training courses, including barista training, a CPR course, and workplace courses offered at school. These courses have equipped me with a range of practical skills that are valuable in various professional settings. These activities allow me to get new talents and skills!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Active Productions</h2>
+                <p class="s-description text-center">
+                  I am actively involved in school productions, including our latest "Oliver" school production, where I served as a crew member for the media department. My participation in these and other school productions has given me hands-on experience in a collaborative environment, further developing my skills in media and production
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Community Service Hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Film Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">N/A</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Awards Won</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                The collection of powerful experiences!
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="Thumb Nail.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="Thumb Nail.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Moring Montage - (Year 11 Media ATAR)</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Film</span> / <span class="w-date">6 March. 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="Morning Montage.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="BlackMagic Main.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="BlackMagic Main.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Black Magic Pocket Cinema Camera</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Education</span> / <span class="w-date">Jun 20, 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="Learning BMPCC4k.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="BBCMain.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="BBCMain.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">BBC News Report (Year 10 Media)</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Film</span> / <span class="w-date">March 6, 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="BBC News.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="2024ArtsLab-Main.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="2024ArtsLab-Main.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Development of Film (2024 Arts Lab)</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Project</span> / <span class="w-date">2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="Development Of Film.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="Within the Wind Main.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="Within the Wind Main.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Within The Wind</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Visual Art</span> / <span class="w-date">2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="With in the wind.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="Main-monotype.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="Main-monotype.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Monotype Painting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Visual Art</span> / <span class="w-date">2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="Monotype Painting.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="Luke Terri Small.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Luke Terri</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        "Jordan is an inspiration! His dedication and hard work ethic are truly unmatched. Seeing his passion for media come alive is incredibly motivating."
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="Taj Rollings Small.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Taj Rollings</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        "There's no one I know who puts in the work quite like Jordan. His passion for media is contagious, and I can't wait to see what incredible things he accomplishes!"
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Blogging is my creative playground! It's where I explore my passions, delve into new interests, and share them with the world.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="Aeroplane Essentials Main.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">My Aeroplane Essentials for a Long Flight</a></h3>
+                <p class="card-description">
+                  Conquer long flights! ✈️  My latest blog post shares all the essentials you need to stay comfy, entertained, and prepared for a smooth journey.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="Portrate-Small.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Jordan Bantleman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="ATAR Study Tips.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Studying</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">ATAR Study Tips</a></h3>
+                <p class="card-description">
+                  Feeling overwhelmed by ATAR prep? You're not alone!  This blog brings together study tips from high achievers as well as my personal tips, creating a supportive space for exam success.  Learn valuable strategies, Look at others experiences, and fly through the ATAR pathway!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="Portrate-Small.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Jordan Bantleman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 20 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="Marketing ATAR.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">ATAR Subject</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">Introduction to Marketing ATAR</a></h3>
+                <p class="card-description">
+                  Gear up for your Introduction to Marketing ATAR!  This blog equips you with the essentials!  We'll break down key concepts, explore marketing strategies used by major brands, and provide resources to ace your ATAR exams.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="Portrate-Small.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Jordan Bantleman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        I'm always excited to connect with new people, whether you're interested in my projects, have questions, or just want to say hello. Feel free to reach out to me through social media or email. I look forward to hearing from you!
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> Perth WA</li>
+                        <li><span class="bi bi-phone"></span> +61 422 850 288</li>
+                        <li><span class="bi bi-envelope"></span> School/Organisation Email: Bantlemanj@wesley.wa.edu.au</li>
+                        <li><span class="bi bi-envelope"></span>Personal Email: Bantleman.jordan@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.instagram.com/jordanbantleman/" target="_blank"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://www.facebook.com/jordan.bantleman/" target="_blank"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                      </ul>
+                    </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">Portfolio <strong>Jordan Bantleman</strong>.</p>
+            <div class="credits">
+            <p class="copyright">Thank you for your time!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="purecounter_vanilla.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="typed.umd.js"></script>
+  <script src="validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="main.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    function toggleAboutSection() {
+      const aboutSections = document.querySelectorAll('.about-description');
+      aboutSections.forEach(section => {
+        section.classList.toggle('expanded');
+      });
+
+      const readMoreBtn = document.getElementById('read-more-btn');
+      if (readMoreBtn.innerText === 'Read More') {
+        readMoreBtn.innerText = 'Read Less';
+      } else {
+        readMoreBtn.innerText = 'Read More';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const readMoreBtn = document.getElementById('read-more-btn');
+      readMoreBtn.addEventListener('click', toggleAboutSection);
+    });
+  </script>
+
+</body>
+
+</html>
